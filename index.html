@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+    <!-- Timeblocks go here -->
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block" >12AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="0"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn0"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block" >1AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="1"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn1"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block" >2AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="2"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn2"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block" >3AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="3"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn3"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">4AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="4"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn4"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">5AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="5"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn5"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">6AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="6"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn6"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">7AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="7"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn7"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">8AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="8"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn8"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">9AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="9"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn9"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">10AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="10"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn10"></button> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1 hour">
+      <p class="time-block">11AM</p>
+      </div>
+      <div class="col-lg-10 description">
+      <textarea type="text" name="11"></textarea>
+      </div>
+      <div class="col-lg-1 saveBtn">
+      <button class="saveBtn" id="btn11"></button> 
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">12PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="12"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn12"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">1PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="13"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn13"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">2PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="14"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn14"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">3PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="15"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn15"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">4PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="16"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn16"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">5PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="17"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn17"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">6PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="18"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn18"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">7PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="19"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn19"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">8PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="20"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn20"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">9PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="21"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn21"></button> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1 hour">
+        <p class="time-block">10PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="22"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn22"></button> 
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-lg-1 hour">
+        <p class="time-block">11PM</p>
+        </div>
+        <div class="col-lg-10 description">
+        <textarea type="text" name="23"></textarea>
+        </div>
+        <div class="col-lg-1 saveBtn">
+        <button class="saveBtn" id="btn23"></button> 
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script> 
+    $(document).ready(function(){ 
+      
+      // adding the date to the top page
+    $("#currentDay").append(moment().format("dddd, MMMM Do"));
+    // loading saved events 
+    //  var textid=localStorage.getItem(("i"));
+    //  var savedevent=localStorage.getItem("savedevent");
+    // $(`textarea`).index("i")=text(savedevent);
+   
+    // adding class to each textarea
+    $("textarea").each(function addclass(){
+    var inputvalue=0;
+    var currenttime=0;
+    currenttime=moment().format("H");
+    inputvalue=parseInt($(this).attr("name"));
+    if (currenttime < inputvalue){
+      $(this).addClass("future");
+     } 
+     else if (currenttime > inputvalue){
+      $(this).addClass("past");
+     }
+     else {
+      $(this).addClass("present");
+      }
+    });
+    // adding event listener to save button and save id in localStorage 
+
+  
+    $(`button`).on(`click`,function saveevents(event){
+    event.preventDefault();
+    var i=$(this).index();
+    var savedevent = $("textarea").val();
+    localStorage.setItem(i,savedevent);
+    });
+    }); 
+     
+  
+   
+    </script>
+  </body>
+</html>
